@@ -1,1 +1,1 @@
-web: ./build/index.html
+web: ./build
