@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {useQuery, gql} from '@apollo/client'
 
-import {LOAD_USERS} from "../GraphQL/Queries";
+import {LOAD_USERS} from "../graphQL/Queries";
 
 function GetUsers(){
     const {error, loading, data} = useQuery(LOAD_USERS)

@@ -1,0 +1,22 @@
+export const routes = [
+    {
+        menu_id:"dashboard",
+        menu_name:"Dashboard",
+        menu_link:"/",
+    },
+    {
+        menu_id:"company",
+        menu_name:"Company",
+        menu_link:"/company",
+    },
+    {
+        menu_id:"event",
+        menu_name:"Event",
+        menu_link:"/event",
+    },
+    {
+        menu_id:"setting",
+        menu_name:"setting",
+        menu_link:"/setting",
+    }
+]

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {useMutation} from "@apollo/client";
 
-import {CREATE_USER} from "../GraphQL/Mutations";
+import {CREATE_USER} from "../graphQL/Mutations";
 
 function AddUser() {
     const [name, setName] = useState("");
