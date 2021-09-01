@@ -8,7 +8,7 @@ import api from 'jira-agile-api-client';
 
 import {GRAPHQL_URI} from '../constants/appConfig'
 
-
+api.setEndpoint('https://lftechnology.atlassian.net');
 api.setSetting('headers', {
   'Access-Control-Allow-Origin': "*",
   "X-Atlassian-Token": "no-check",
