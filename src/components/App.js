@@ -4,7 +4,23 @@ import {onError} from '@apollo/client/link/error';
 import GetUsers from "./GetUsers";
 import AddUser from "./AddUser";
 
+import api from 'jira-agile-api-client';
+
 import {GRAPHQL_URI} from '../constants/appConfig'
+
+
+api.setSetting('headers', {
+  'Access-Control-Allow-Origin': "*",
+  "X-Atlassian-Token": "no-check",
+  "Accept": "*/*",
+  'Authorization': 'Basic '+btoa('rikeshshrestha@lftechnology.com:1tqTjoz6OsvnB2Y1CA6s7014')
+});
+
+api.board.getSprints(599).then(function (boards) {
+  console.log(boards);
+}).catch(function (error) {
+  console.log(error);
+});
 
 const httpLink = new HttpLink({ uri: GRAPHQL_URI })
 
